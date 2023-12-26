@@ -1,0 +1,86 @@
+.coustomizableProduct{
+    margin: 100px 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.coustomizableProduct div h2{
+    font-weight: 600;
+}
+.coustomizableProduct div div img{
+    width: 250px;
+    height:300px;
+}
+.build_btn{
+    padding:5px 10px;
+    background-color:black;
+    font-weight: 600;
+    font-size: 12px;
+}
+.build_btn i{
+    padding:0 10px;
+}
+/*-------------------------------------------Costomisable Dashboard end------------------------------------------- */
+.BuildProduct{
+    margin-top:100px;
+}
+.BuildProduct .CostomizableSample img{
+    width: 200px;
+    height: 200px;
+}
+/*-----------------------------------------------Build Product---------------------------------------------------- */
+.buildProduct{
+    padding: 15px;
+    margin-top:40px;
+}
+.buildProduct h2{
+    font-size:1.5rem;
+}
+.buildProduct table{
+    overflow-x:auto;
+ }
+.buildProduct table thead{
+   height:10px;
+}
+.buildProduct table thead th{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.buildProduct table tfoot{
+    padding:7px 0px;
+}
+
+.buildProduct table tbody tr td img{
+    width:100px;
+    height:100px;
+}
+.buildProduct table tbody tr td input,.buildProduct table tbody tr td button{
+    height:20px;
+    font-size:1.0rem;
+}
+.Button-insert,.Button-Clear{
+    width:80px;
+    font-size:12px;
+    padding:4px;
+}
+.Button-insert i,.Button-Clear i{
+    margin-right:6px;
+}
+/*-------------------------------------------Suggest Products---------------------------------------------- */
+.Suggestitem img{
+    width:150px;
+    height: 150px;
+}
+/* ------------------------Alert--------------------------------------------------------------- */
+.Alert{
+    height:100px;
+    width:30%;
+
+}
+.Alert .row{
+    margin-top: 10px;
+   
+}
+.Alert .row button{
+    width: 60px;
+    height: 20px;
+    font-size: 12px;
+}

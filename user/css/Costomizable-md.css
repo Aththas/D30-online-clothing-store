@@ -1,0 +1,45 @@
+.coustomizableProduct{
+    margin: 130px 15px;
+}
+.coustomizableProduct div div img{
+    width: 200px;
+    height:250px;
+}
+.build_btn{
+    transform:translateY(-15px);
+    padding: 2px 5px;
+    font-size: 10px;
+}
+/*-------------------------------------------Costomisable Dashboard end------------------------------------------- */
+.BuildProduct{
+    margin-top:120px;
+}
+.BuildProduct .CostomizableSample img{
+    width: 180px;
+    height: 180px;
+}
+/* -------------------------------------------------Build Product---------------------------------------------------- */
+.buildProduct{
+   overflow-x: auto;
+}
+.buildProduct table{
+    width: 138%;
+}
+
+.buildProduct table tbody tr td img{
+    width:80px;
+    height:80px;
+    margin:10px 15px;
+}
+.Suggestitem img{
+    width:120px;
+    height: 120px;
+}
+.Alert{
+    height:100px;
+    width:50%;
+
+}
+.AlertActive{
+    left: 40%;
+}

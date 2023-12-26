@@ -1,0 +1,73 @@
+html {
+  font-size: 50%;
+  font-family: 'Roboto Slab', serif;
+}
+
+header{
+  height:80px;
+}
+/*------------------------------------------------------------Logo----------------------------------------------------------------- */
+header .Logo {
+  width: 150px;
+  height: 55px;
+  margin-left: 5px;
+}
+header ul{
+  padding:0 15px;
+}
+
+header ul li a{
+  font-size: 16px;
+  font-weight: 400;
+ 
+}
+.searchbar{
+  top:85px;
+
+}
+.searchbar>div{
+  width:200px;
+}
+.searchbar input{
+  height: 30px;
+  border: 1px solid var(--secoundcolor);
+}
+ .searchbar div span{
+  width:30px;
+  height: 30px;
+  font-size:16px;
+}
+header .icons li:nth-of-type(3),header .icons li:nth-of-type(4){
+  display: none;
+}
+.userImage img{
+  height:50px;
+  width:50px;
+}
+.userImage span{
+  font-size:12px;
+  white-space: nowrap;
+}
+/* ---------------------------------------sidebar--------------------------------------------------------------- */
+aside{
+  top:50px;
+  height: 100vh;
+ 
+}
+aside .sidebar{
+  margin-top: 20px;
+}
+aside .sidebar ul li{
+ padding: 8px 0px;
+}
+aside .sidebar ul li a{
+  font-size: 12px;
+}
+aside img{
+  width: 120px;
+  height: 120px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+}
+
+

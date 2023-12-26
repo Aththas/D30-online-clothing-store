@@ -1,0 +1,251 @@
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.coustomizableProduct{
+    margin: 120px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:40px;
+    position: relative;
+
+}
+.coustomizableProduct div{
+    height:fit-content;
+    position: relative;
+    text-align: center;
+
+}
+.coustomizableProduct div h2{
+    font-weight: bold;
+
+}
+.coustomizableProduct div div{
+    background-color:rgb(66, 66, 66);
+    padding:5px;
+    display: flex;
+    justify-content:center;
+    position: relative;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.coustomizableProduct div div img{
+    width: 280px;
+    height:340px;
+    border-radius:inherit;
+   
+}
+.build_btn{
+    border-radius: 5px;
+    padding:5px 20px;
+    background-color:black;
+    color:white;
+    font-weight: 700;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    transition: 1.5s ease-in;
+}
+.build_btn:hover{
+    box-shadow: inset -140px 0px 0px 0px rgb(220,20,60),inset 140px 0px 0px 0px rgb(220, 20, 60);
+
+}
+/*-------------------------------------------Costomisable Dashboard end------------------------------------------- */
+.BuildProduct{
+    margin-top:120px;
+    width: 90%; 
+    overflow: auto;
+}
+.CostomizableSample{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.CostomizableSample img{
+    width: 250px;
+    height: 250px;
+    border-radius: 2%;
+}
+/*-----------------------------------------------Build Product---------------------------------------------------- */
+.buildProduct{
+    padding: 20px;
+    margin-top:50px;
+   
+}
+.buildProduct h2{
+    text-align: center;
+    font-size:2.0rem;
+}
+.buildProduct table{
+    width: 98%;
+    margin:20px auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px var(--shadowcolor);
+    border-radius:8px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.705);
+
+}
+.buildProduct table thead{
+   background-color:var(--shadow1color);
+   height:30px;
+   border-bottom: 1px ridge var(--secoundcolor);
+}
+.buildProduct table thead th{
+    font-size: 1.7rem;
+    font-weight: 800;
+    border-right: 1px groove var(--shadowcolor);
+    color:var(--firstcolor);
+}
+.buildProduct table th,td{
+    padding:5px;
+}
+.buildProduct table tbody td{
+    font-size: 1.2rem;
+}
+.buildProduct table tr th:nth-child(1),.buildProduct table tr td:nth-child(1){
+    width:30%;
+}
+.buildProduct table tr th:nth-child(2),.buildProduct table tr td:nth-child(2){
+    width:20%;
+}
+.buildProduct table tr th:nth-child(3),.buildProduct table tr td:nth-child(3){
+    width:20%;
+}
+.buildProduct table tr th:nth-child(4),.buildProduct table tr td:nth-child(4){
+    width:12%;
+}
+.buildProduct table tr th:nth-child(5),.buildProduct table tr td:nth-child(5){
+    width:8%;
+}
+.buildProduct table tr th:nth-child(6),.buildProduct table tr td:nth-child(6){
+    width:10%;
+}
+.buildProduct table tfoot{
+    padding:10px 0px;
+    background-color:var(--shadow2color);
+}
+.buildProduct table tbody tr:hover{
+    background-color:var(--shadow2color);
+}
+.buildProduct table tbody tr td img{
+    width:150px;
+    height:150px;
+    border-radius:5px;
+    object-fit:cover;
+}
+.buildProduct table tbody tr td input,.buildProduct table tbody tr td button{
+    height:30px;
+    font-size:1.4rem;
+}
+.Button-insert,.Button-Clear{
+    padding:6px;
+    border-radius:4px;
+    width:100px;
+    border:1px groove var(--shadow1color);
+    font-size:16px;
+}
+.Button-insert i,.Button-Clear i{
+    margin-right:10px;
+}
+/*-------------------------------------------Suggest Products---------------------------------------------- */
+.SuggestPrducts{
+    overflow-x:auto ;
+    display: flex;
+    scroll-behavior: smooth;
+}
+.SuggestPrducts::-webkit-scrollbar {
+    display: none;
+  }
+  
+.Suggestitem {
+    text-align: center;
+    box-shadow: 5px 5px 10px var(--shadowcolor);
+    margin:10px 30px;
+    border-radius: 6px;
+}
+.Suggestitem img{
+    width:250px;
+    height: 250px;
+}
+.Alert{
+    height:200px;
+    width:25%;
+    background-color:white;
+    box-shadow: 10px 10px 10px var(--shadow1color),-10px 10px 10px var(--shadow1color),10px -10px 10px var(--shadow1color),-10px -10px 10px var(--shadow1color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    z-index: -5;
+
+}
+.Alert .row{
+    margin-top: 20px;
+   
+}
+.Alert .row button{
+    width: 80px;
+    height: 30px;
+    margin: 0 10px;
+    padding:0 20px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.Alert .row button:nth-child(1){
+    background-color: var(--shadowcolor);
+}
+.Alert .row button:nth-child(2){
+    background-color: var(--thirdcolor);
+}
+.AlertActive{
+    z-index:1000;
+    opacity: 1;
+    position:absolute;
+    top:50%;
+    left: 50%;
+}
+.errbk{
+    background-color:red;
+}
+/* ---------------------#SeeCostomisableitems tbody----------------------------- */
+#SeeCostomisableitems{
+    padding:20px;
+    margin-top:50px;
+    width:100%;
+    box-shadow: 10px 10px 10px var(--shadow1color),-10px 10px 10px var(--shadow1color),10px -10px 10px var(--shadow1color),-10px -10px 10px var(--shadow1color);
+}
+#SeeCostomisableitems th,#SeeCostomisableitems td{
+    text-align: center;
+}
+#SeeCostomisableitems thead{
+    text-align: center;
+    font-size: 17px;
+    background-color: var(--shadow2color);
+    padding:20px 5px;
+    height:60px;
+}
+#SeeCostomisableitems tbody{
+    text-align: center;
+    font-size: 14px;
+}
+#SeeCostomisableitems tfoot{
+    background-color: var(--shadow2color);
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    padding:20px;
+}
+.productpicture{
+    width: 250px;
+    height: 250px;
+}
+.costomisablereport{
+    margin-top:150px;
+    width: 90%;
+}

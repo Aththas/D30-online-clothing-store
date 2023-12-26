@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto+Slab:wght@100;200;300&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css");
+/* decalration variables */
+:root{
+  --fistcolor:white;
+  --secoundcolor:black;
+  --thirdcolor:#ec2f42;
+  --hovercolor:yellow;
+  --shadowcolor:rgb(111, 111, 111);
+  --shadow1color:grey;
+  --shadow2color:#E6E6FA;
+}
+/* universal selector */
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+/* universal selectors slection */
+*::selection{
+  color:var(--secoundcolor);
+  background-color: var(--fistcolor);
+}
+html {
+  overflow-x: hidden;
+  font-size: 68%;
+}
+a{
+  text-decoration:none;
+}
+header{
+  z-index:1000;
+  background-color:var(--thirdcolor);
+  height:90px;
+  width:100%;
+  color:var(--fistcolor);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow:5px 0 10px var(--secoundcolor);
+}
+#Resposibletoggle{
+  display: none;
+}
+/*------------------------------------------------------------Logo----------------------------------------------------------------- */
+header .Logo {
+  display: flex;
+  margin:0 10px 0px 0px;
+  height: fit-content;
+  clip-path: ellipse(47% 44% at 50% 50%);
+  width:180px;
+  height:66px;
+  background-position:center;
+  background-size:cover;
+}
+header ul{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+}
+header ul li{
+  padding:0 20px;
+  font-size: 20px;
+  list-style-type: none;
+}
+header ul li a{
+  color:var(--fistcolor);
+  font-weight: 800;
+}
+header ul li a:hover{
+  color:var(--hovercolor);
+  text-decoration: none;
+}
+#closenav{
+  display: none;
+}
+header .icons{
+  margin-left:auto;
+}
+.userImage{
+  margin-top: 12px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-left:auto;
+  font-size:16px;
+}
+.userImage img{
+  border-radius:50%;
+  height:70px;
+  width:70px;
+}
+header .icons a:hover{
+  color:var(--hovercolor);
+}
+.searchbar{
+  position:absolute;
+  display:none;
+  top:95px;
+  width: 100%;
+  height: fit-content;
+
+}
+.searchbar>div{
+  width:400px;
+  float: right;
+}
+.searchbar input{
+  height: 35px;
+  border: 1px solid var(--secoundcolor);
+}
+ .searchbar div span{
+  width:40px;
+  height: 35px;
+  background-color:var(--thirdcolor);
+  color:var(--fistcolor);
+  font-size:18px;
+}

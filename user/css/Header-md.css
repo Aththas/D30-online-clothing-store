@@ -1,0 +1,66 @@
+html {
+    font-size: 40%;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  header{
+    flex-direction: column;
+    flex-wrap:wrap ;
+    height:fit-content;
+  }
+  /*------------------------------------------------------------Logo----------------------------------------------------------------- */
+  header .Logo {
+    width: 80px;
+    height: 60px;
+  }
+  header nav{
+    align-self:flex-start;
+  }
+  header ul li a{
+    font-size: 14px;
+   
+  }
+ header .icons li:nth-of-type(5){
+    position: absolute;
+    top:60%;
+    left:90%;
+    z-index: 500;
+  } 
+  .userImage{
+    margin-top:-42%;
+    margin-left:-80%;
+  }
+  .search{
+    display: none;
+  }
+ 
+   .searchbar div span{
+    width:30px;
+    height: 30px;
+    font-size:16px;
+  }
+  .userImage span{
+    font-size:12px;
+  }
+  /* ---------------------------------------sidebar--------------------------------------------------------------- */
+  aside .sidebar{
+    margin-top: 90px;
+    align-items: center;
+  }
+  aside .sidebar ul li{
+    font-size:14px;
+  }
+  aside img{
+    width: 100px;
+    height: 100px;
+  }
+  .sidebar ul li span{
+    display: none;
+  }
+  aside .sidebar ul li:nth-of-type(1){
+    display: block;
+
+  }
+  aside .sidebar ul li:nth-of-type(1) div>input{
+    display:none;
+  }

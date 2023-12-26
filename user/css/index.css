@@ -1,0 +1,276 @@
+      a {
+   text-decoration: none;
+}
+p{
+   font-size: 1.4rem;
+   color: black;
+   margin-top: 5px;
+   line-height: 2.5rem;
+   font-weight: 300;
+   letter-spacing: 0.05rem; 
+}
+span{
+   color: crimson;
+}
+.cta{
+   display: inline-block; 
+   padding: 10px 30px;
+   color: white;
+   background-color: transparent;
+   border:2px solid crimson;
+   font-size: 2rem;
+   text-transform: uppercase;
+   letter-spacing: 0.1rem; 
+   margin-top: 30px;
+}
+.cta:hover{
+   transition: 0.5s ease;
+   transition-property: background-color,color;
+   color: white;
+}
+.section-title{
+   font-size: 4rem;
+   font-weight: 500;
+   color: black;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   letter-spacing: 0.2rem;
+   text-align: center;
+}
+.section-title span{
+   color: crimson;
+}
+.containernew{
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center; 
+   justify-content: center; 
+}
+/* Hero Section */
+#hero{
+   background-image: url(../img/bg.jpg);
+   background-size: cover;
+   background-position: top center;
+   position: relative;
+   z-index: 1;
+}
+
+#hero::after{
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background-color: black;
+   opacity: 0.7;
+   z-index: -1; 
+}
+#hero .hero{ 
+   max-width: 1200px;
+   margin: 0 auto; 
+   padding: 0 50px;
+   justify-content: flex-start;
+}
+#hero h1{
+   display: block;
+   width: fit-content;
+   font-size: 4rem;
+   position: relative;
+   color: white;
+}
+
+#hero .cta{
+   font-size: 1.8rem;
+   padding: 10px 12.5px;
+}
+/* End Hero Section */
+
+/* Services Section */
+#services .services{
+   flex-direction: column;
+   text-align: center;
+   max-width: 1500px;
+   margin: 0 auto;
+   padding: 100px 0;
+}
+
+#services .service-top{
+   max-width: 900px;
+   margin: 0 auto; 
+}
+#services .service-bottom{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;/*The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked*/
+   margin-top: 50px;
+}
+#services .service-item{
+   flex-basis: 80%;/* Width will even obey flex-shrink when using Flexbox*/
+   display: flex; 
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+   padding: 30px;
+   border-radius: 10px;
+   background-color: black; opacity: 0.8;
+   background-size: cover;
+   margin: 10px 5%;
+}
+
+#services .service-bottom .icon{
+   margin: 0 auto;
+   height: 80px;
+   width: 80px;
+   margin-bottom: 20px;
+}
+#services .service-item h2{
+   font-size: 1.3rem;
+   font-weight: 700;
+   color: white;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+}
+#services .service-item p{
+   color: white;
+   text-align: left;
+}
+
+/* End of Services Section */
+      /*project section*/
+#projects .projects{
+   flex-direction: column;
+   max-width: 1200px;
+   margin: 0 auto; 
+   padding: 100px 0;
+}
+#projects .projects-header h1{
+   margin-bottom: 50px; 
+}
+#projects .all-projects{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+#projects .project-item{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 80%;
+   margin: 20px auto;
+   border-radius: 10px;
+   overflow: hidden;
+}
+#projects .project-info{
+   padding: 30px;
+   flex-basis: 50%;
+   background-color: black; opacity: 0.8;
+   height: 100%;
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   color: white;
+} 
+#projects .project-info h1{
+   font-size: 4rem;
+   font-weight: 500;
+   margin-bottom: 20px;
+   color: white;
+}
+#projects .project-info h2{
+   font-size: 1.8rem;
+   font-weight: 500;
+   margin-bottom: 10px;
+   color: white;
+}
+#projects .project-info p{
+   color: white;
+}
+#projects .project-img{
+   flex-basis: 50%;
+   height: 300px;
+   overflow: hidden;
+   position: relative;
+}
+#projects .project-img:after{
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+   opacity: 0.7;
+}
+#projects .project-img:hover img{
+   transform: scale(1.1);
+}
+#projects .project-img img{
+   transition: 0.5s ease transform;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px){
+
+   .cta{
+      font-size: 2.5rem;
+      padding: 20px 60px;
+   }
+   h1.section-title{
+      font-size: 6rem;
+   }
+
+   /* Hero section */
+   #hero h1{
+      font-size: 6rem;
+   }
+   #hero .cta{
+      font-size: 2rem;
+      padding: 20px 55px;
+   }
+   /* End Hero section */
+
+   /* Service section */
+   #services .service-bottom .service-item{
+      flex-basis: 45%;
+      margin: 2.5%
+   }
+   /* End Service section */
+   /* Project section */
+   #projects .project-item{
+      flex-direction: row;
+      height: 400px;
+      margin: 0;
+      width: 100%;
+      border-radius: 0;
+   }
+   #projects .project-item:nth-child(even){
+      flex-direction: row-reverse;
+   }
+   #projects .all-projects .project-info{
+      height: 100%;
+   }
+   #projects .all-projects .project-img{
+      height: 100%;
+   }
+   /* End Project section */
+}
+/* End of Media Query For Tablet */
+
+/* Media Query For Desktop */
+@media only screen and (min-width: 1200px){
+   /*Service section*/
+   #services .service-bottom .service-item{
+      flex-basis: 22%;
+      margin: 1.5%;
+   }
+   /*End Service section*/
+
+}

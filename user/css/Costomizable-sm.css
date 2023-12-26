@@ -1,0 +1,59 @@
+@import url("css/Header-sm.css");
+main{
+    width: 100%;
+    justify-content: center;
+}
+.coustomizableProduct{
+    margin: 150px 5px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.coustomizableProduct div div img{
+    width: 200px;
+    height:250px;
+}
+/*-------------------------------------------Costomisable Dashboard end------------------------------------------- */
+.BuildProduct{
+    margin-top:120px;
+}
+.BuildProduct .CostomizableSample img{
+    width: 120px;
+    height: 120px;
+}
+/*-----------------------------------------------Build Product---------------------------------------------------- */
+.buildProduct{
+    margin-top:30px;
+}
+
+.buildProduct table{
+    width: 120%;
+    margin:20px auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px var(--shadowcolor);
+    border-radius:8px;
+    border-collapse: collapse;
+}
+.SuggestPrducts{
+    overflow-x:none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+  
+.Suggestitem {
+    text-align: center;
+    margin:10px 10px;
+}
+.Suggestitem img{
+    width:100px;
+    height:100px;
+}
+.Alert{
+    height:100px;
+    width:80%;
+
+}
+.AlertActive{
+    left:10%;
+}
